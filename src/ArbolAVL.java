@@ -1,18 +1,18 @@
 public class ArbolAVL {
     Nodo raiz;
-
-    private int getAltura(Nodo nodo) {
+//Creamos metodos importantes para el funcionamiento del arbol
+    private int getAltura(Nodo nodo) { 
         if (nodo == null) return 0;
         return nodo.altura;
     }
 
     private int max(int a, int b) {
-        return (a > b) ? a : b;
+        return (a > b) ? a : b; //Esta funcion nos ayudara a si a es mayor que b entonces dame a, sino dame b 
     }
 
     private int getFactorBalance(Nodo nodo) {
         if (nodo == null) return 0;
-        return getAltura(nodo.izquierda) - getAltura(nodo.derecha);
+        return getAltura(nodo.izquierda) - getAltura(nodo.derecha); //aqui calculamos el factor balance del nodo que seria la diferencia de hijo izquierdo y derecho
     }
 
     private Nodo rotarDerecha(Nodo y) {
@@ -42,7 +42,7 @@ public class ArbolAVL {
     }
 
     public void insertar(int valor) {
-        raiz = insertarRecursivo(raiz, valor);
+        raiz = insertarRecursivo(raiz, valor); //Este metodo nos ayuda a insertar el valor en el nodo correspondiente
     }
 
     private Nodo insertarRecursivo(Nodo nodo, int valor) {
@@ -119,33 +119,33 @@ public class ArbolAVL {
     }
 
     private Nodo encontrarMinimo(Nodo nodo) {
-        while (nodo.izquierda != null) {
-            nodo = nodo.izquierda;
+    while (nodo.izquierda != null) {
+        nodo = nodo.izquierda;
         }
         return nodo;
     }
 
-    public void vaciarArbol() {
+    public void vaciarArbol() { //metodo para vaciar por completo el arbol
         raiz = null;
     }
 
-    public void printTree() {
+    public void printTree() { //este metodo nos ayuda a imprimir el arbol en la terminal
         if (raiz == null) {
             System.out.println("(Árbol vacío)");
         } else {
             printTreeRecursivo(raiz, 0, "R");
         }
-        System.out.println("--------------------------------");
+        System.out.println("--------------------------------"); 
     }
 
-    private void printTreeRecursivo(Nodo nodo, int nivel, String direccion) {
+    private void printTreeRecursivo(Nodo nodo, int nivel, String direccion) {//Este metodo nos ayudara a imprimir el arbol como estructura para poder visualizarlo en la terminal.
         if (nodo == null) return;
 
         printTreeRecursivo(nodo.derecha, nivel + 1, "/");
 
-        for (int i = 0; i < nivel; i++) System.out.print("    ");
+        for (int i = 0; i < nivel; i++) System.out.print("    "); //identación para que se vea mejor estructurado el arbol
         System.out.println(direccion + " " + nodo.valor);
 
-        printTreeRecursivo(nodo.izquierda, nivel + 1, "\\");
+        printTreeRecursivo(nodo.izquierda, nivel + 1, "\\"); 
     }
 }

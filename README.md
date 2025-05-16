@@ -35,8 +35,8 @@ YouTube - Explicación Árbol AVL en Java Link -->
 ## 🌳 Ejemplos de Operaciones AVL
 ```markdown
 Caso #1:
-Valores:[30, 20, 10]
- 
+Valores:{30, 20, 10}
+
 Árbol Resultante:
 
     20
