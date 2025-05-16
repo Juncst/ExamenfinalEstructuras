@@ -8,8 +8,6 @@ Este proyecto implementa un **Árbol AVL** en Java, un tipo especial de árbol b
 
 Los árboles binarios de búsqueda comunes pueden desequilibrarse, aumentando el tiempo de búsqueda. Un árbol AVL mantiene su altura mínima y garantiza operaciones eficientes (O(log n)).
 
-
-O si prefieres una tabla:
 ## 📁 Estructura del proyecto
 ```markdown
 | Ruta                     | Descripción                              |
@@ -21,6 +19,18 @@ O si prefieres una tabla:
 |---------------------------------------------------------------------|
 
 ```
+## ▶️ Cómo compilar y ejecutar
+```markdown
+1. usar Java JDK Instalado
+2. Clona el repositorio de github
+3. Compila con el siguiente codigo en la terminal: javac -d bin src/*.java
+4. Ejecuta el main con el siguiente codigo en la terminal: java -cp bin Main
+```
+## 🎥 Enlace al video explicativo
+```markdown
+YouTube - Explicación Árbol AVL en Java Link --> 
+```
+
 
 ## 🌳 Ejemplos de Operaciones AVL
 ```markdown
