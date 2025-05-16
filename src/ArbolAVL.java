@@ -133,16 +133,19 @@ public class ArbolAVL {
         if (raiz == null) {
             System.out.println("(Árbol vacío)");
         } else {
-            printTreeRecursivo(raiz, 0);
+            printTreeRecursivo(raiz, 0, "R");
         }
         System.out.println("--------------------------------");
     }
 
-    private void printTreeRecursivo(Nodo nodo, int nivel) {
+    private void printTreeRecursivo(Nodo nodo, int nivel, String direccion) {
         if (nodo == null) return;
-        printTreeRecursivo(nodo.derecha, nivel + 1);
+
+        printTreeRecursivo(nodo.derecha, nivel + 1, "/");
+
         for (int i = 0; i < nivel; i++) System.out.print("    ");
-        System.out.println(nodo.valor);
-        printTreeRecursivo(nodo.izquierda, nivel + 1);
+        System.out.println(direccion + " " + nodo.valor);
+
+        printTreeRecursivo(nodo.izquierda, nivel + 1, "\\");
     }
 }
