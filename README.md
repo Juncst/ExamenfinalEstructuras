@@ -27,10 +27,10 @@ Los árboles binarios de búsqueda comunes pueden desequilibrarse, aumentando el
 4. Ejecuta el main con el siguiente codigo en la terminal: java -cp bin Main
 ```
 ## 🎥 Enlace al video explicativo
-```markdown
+
 YouTube - Explicación Árbol AVL en Java  
 👉 [Haz clic acá para ver el video](https://youtu.be/MSzTtUhVhxQ)
-```
+
 
 
 ## 🌳 Ejemplos de Operaciones AVL
