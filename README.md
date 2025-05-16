@@ -21,7 +21,7 @@ Los árboles binarios de búsqueda comunes pueden desequilibrarse, aumentando el
 ```
 ## ▶️ Cómo compilar y ejecutar
 ```markdown
-1. usar Java JDK Instalado
+1. Tener Java JDK Instalado
 2. Clona el repositorio de github
 3. Compila con el siguiente codigo en la terminal: javac -d bin src/*.java
 4. Ejecuta el main con el siguiente codigo en la terminal: java -cp bin Main
