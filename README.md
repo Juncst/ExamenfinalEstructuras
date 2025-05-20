@@ -26,10 +26,6 @@ Los árboles binarios de búsqueda comunes pueden desequilibrarse, aumentando el
 3. Compila con el siguiente codigo en la terminal: javac -d bin src/*.java
 4. Ejecuta el main con el siguiente codigo en la terminal: java -cp bin Main
 ```
-## 🎥 Enlace al video explicativo
-
-
-
 
 ## 🌳 Ejemplos de Operaciones AVL
 ```markdown
