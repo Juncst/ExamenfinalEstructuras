@@ -28,8 +28,6 @@ Los árboles binarios de búsqueda comunes pueden desequilibrarse, aumentando el
 ```
 ## 🎥 Enlace al video explicativo
 
-YouTube - Explicación Árbol AVL en Java  
-👉 [Haz clic acá para ver el video](https://youtu.be/MSzTtUhVhxQ)
 
 
 
